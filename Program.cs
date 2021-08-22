@@ -10,18 +10,46 @@ namespace Intro01
     {
         public static void Main(string[] args)
         {
-            Console.Write("What is your name? ");
-            string name = Console.ReadLine();
+            Console.WriteLine("Welcome to Millenial Hipster conversion!");
+            bool repeat = true;
+            while (repeat == true)
+            {
+                Console.Write("Is your measurement type inches, feet, fidget spinners, or memes? ");
+                string measurementType = Console.ReadLine();
 
-            Console.Write("What is your age? ");
-            int age = int.Parse(Console.ReadLine());
+                Console.Write("Please enter the amount: ");
+                double amount = double.Parse(Console.ReadLine());
 
-            Console.Write("What is the current year? ");
-            int year = int.Parse(Console.ReadLine());
+                if (measurementType == "inches")
+                {
+                    amount *= 3.5;
+                    measurementType = "fidget spinners";
+                }
+                else if (measurementType == "feet")
+                {
+                    amount *= 5;
+                    measurementType = "memes";
+                }
+                else if (measurementType == "fidget spinners")
+                {
+                    amount /= 3.5;
+                    measurementType = "inches";
+                }
+                else if (measurementType == "memes")
+                {
+                    amount /= 5;
+                    measurementType = "feet";
+                }
 
-            int birthYear = year - age;
+                Console.WriteLine("That is " + amount + " " + measurementType + "!");
 
-            Console.WriteLine(name + ", if you're " + age + " years old, you were probably born in " + birthYear + ".");
+                Console.Write("Do you wish do to another calculation? ");
+                string response = Console.ReadLine();
+                if (response != "yes")
+                {
+                    repeat = false;
+                }
+            }
         }
     }
 }
