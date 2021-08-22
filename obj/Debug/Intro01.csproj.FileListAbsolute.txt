@@ -1,0 +1,7 @@
+C:\Docs\Csharp\Intro01\obj\Debug\Intro01.csproj.AssemblyReference.cache
+C:\Docs\Csharp\Intro01\obj\Debug\Intro01.csproj.CoreCompileInputs.cache
+C:\Docs\Csharp\Intro01\bin\Debug\Intro01.exe.config
+C:\Docs\Csharp\Intro01\bin\Debug\Intro01.exe
+C:\Docs\Csharp\Intro01\bin\Debug\Intro01.pdb
+C:\Docs\Csharp\Intro01\obj\Debug\Intro01.exe
+C:\Docs\Csharp\Intro01\obj\Debug\Intro01.pdb
